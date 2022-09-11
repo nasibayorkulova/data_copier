@@ -1,0 +1,1 @@
+docker run -it --name data-copier --rm --network data-copier-nw -v d:\nasiba\data_engineering\data\retail_db_json:/retail_db_json -e base_dir=/retail_db_json -e db_host=fae407f2d9d1 -e db_port=5432 -e db-name=retail_db -e db_user=retail_user -e db_pass=itversity data-copier bash
